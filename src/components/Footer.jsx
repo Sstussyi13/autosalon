@@ -4,16 +4,16 @@ export default function Footer() {
   return (
     <footer className="bg-[#f7f9fb] text-gray-700 py-12 px-4 border-t">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
-        {/* Логотип и адрес */}
+       
         <div>
-          <img src="/vite.svg" alt="Логотип" className="h-10 mb-4" />
+          <img src="/logo.svg" alt="Логотип" className="h-10 mb-4" />
           <p className="text-sm">
             г. Москва, ул. Примерная, 1<br />
             Пн–Сб: 9:00–18:00
           </p>
         </div>
 
-        {/* Навигация */}
+      
         <div>
           <h4 className="font-semibold mb-3">Разделы</h4>
           <ul className="space-y-2 text-sm">
@@ -25,17 +25,17 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Контакты */}
+        
         <div>
           <h4 className="font-semibold mb-3">Контакты</h4>
           <ul className="space-y-2 text-sm">
-            <li>+7 (927) 997-12-42</li>
-            <li>+7 (8352) 67-52-52</li>
-            <li>Email: info@autosite.ru</li>
+            <li>+7 (977) 467-52-72</li>
+            <li>+7 (977) 467-52-72</li>
+            <li>Email: viperrkaiangel9micesurgery@gmail.com</li>
           </ul>
         </div>
 
-        {/* Соцсети */}
+      
        <div>
   <h4 className="font-semibold mb-3">Мы в соцсетях</h4>
   <div className="flex gap-4 items-center">

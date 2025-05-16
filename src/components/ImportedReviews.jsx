@@ -55,7 +55,7 @@ export default function ReviewsSlider() {
           Обзоры привезенных авто
         </h2>
 
-        {/* Слайдер */}
+     
         <div className="relative review-slider">
           <div ref={sliderRef} className="keen-slider">
             {videos.map((video, idx) => (
@@ -94,21 +94,21 @@ export default function ReviewsSlider() {
             ))}
           </div>
 
-          {/* Стрелки */}
+        
           <button
             onClick={() => instanceRef.current?.prev()}
-            className="absolute left-2 sm:left-6 top-1/2 -translate-y-1/2 bg-primary text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shadow-md z-10"
+            className="absolute -left-8 sm:-left-12 top-[45%] sm:top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10 shadow-md"
           >
             <ChevronLeft />
           </button>
           <button
             onClick={() => instanceRef.current?.next()}
-            className="absolute right-2 sm:right-6 top-1/2 -translate-y-1/2 bg-primary text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center shadow-md z-10"
+             className="absolute -right-8 sm:-right-12 top-[45%] sm:top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10 shadow-md"
           >
             <ChevronRight />
           </button>
 
-          {/* Прогресс-бар */}
+      
           <div className="mt-6 flex justify-center gap-3">
             {videos.map((_, i) => (
               <div
@@ -121,7 +121,7 @@ export default function ReviewsSlider() {
           </div>
         </div>
 
-        {/* Telegram блок */}
+       
         <div className="mt-20 flex flex-col md:flex-row items-center justify-center gap-10 bg-[#f7f9fb] p-6 md:p-10 rounded-2xl shadow">
           <img
             src="/bmw-telegram.png"

@@ -3,7 +3,7 @@ export default function ConsultationBlock() {
     <section className="py-20 px-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/bg-calc.jpg')" }}>
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-stretch">
         
-        {/* Левая карточка — форма */}
+      
         <div className="bg-white rounded-2xl shadow-md p-8">
           <h3 className="text-lg font-bold mb-2">Только телефон, и мы в деле</h3>
           <p className="text-sm text-gray-600 mb-4">
@@ -32,7 +32,7 @@ export default function ConsultationBlock() {
           </div>
         </div>
 
-        {/* Правая карточка — список преимуществ */}
+      
         <div className="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-center">
           <h3 className="text-2xl font-bold mb-6 leading-snug">
             Точный расчет стоимости<br /> уже через 1 час

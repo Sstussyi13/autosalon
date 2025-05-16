@@ -85,21 +85,23 @@ export default function ImportedCarsSlider() {
             ))}
           </div>
 
-          {/* Стрелки */}
-          <button
-            onClick={() => instanceRef.current?.prev()}
-            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10"
-          >
-            <ChevronLeft size={20} />
-          </button>
-          <button
-            onClick={() => instanceRef.current?.next()}
-            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10"
-          >
-            <ChevronRight size={20} />
-          </button>
+        
+         <button
+  onClick={() => instanceRef.current?.prev()}
+  className="absolute -left-8 sm:-left-12 top-[45%] sm:top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10 shadow-md"
+>
+  <ChevronLeft size={20} />
+</button>
 
-          {/* Прогресс бар */}
+<button
+  onClick={() => instanceRef.current?.next()}
+  className="absolute -right-8 sm:-right-12 top-[45%] sm:top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10 shadow-md"
+>
+  <ChevronRight size={20} />
+</button>
+
+
+        
           <div className="mt-6 flex justify-center gap-3">
             {Array.from({ length: cars.length }).map((_, i) => (
               <div

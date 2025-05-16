@@ -16,7 +16,7 @@ export default function AccordionItem({ number, title, content }) {
           <h3 className="text-xl font-bold">{title}</h3>
         </div>
 
-        {/* Стрелка с анимацией вращения */}
+        
         <ChevronDown
           className={clsx(
             "text-primary transform transition-transform duration-300",

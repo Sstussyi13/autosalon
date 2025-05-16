@@ -30,7 +30,7 @@ export default function ImportStats() {
   return (
     <section className="py-16 sm:py-20 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Верхний блок */}
+       
         <div className="flex flex-col lg:flex-row items-start justify-between gap-6 mb-12">
           <div className="flex-1">
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-4 leading-tight">
@@ -49,7 +49,6 @@ export default function ImportStats() {
           </div>
         </div>
 
-        {/* Слайдер */}
         <div className="relative">
           <div ref={ref} className="keen-slider">
             {cars.map((car, idx) => (
@@ -63,16 +62,16 @@ export default function ImportStats() {
             ))}
           </div>
 
-          {/* Стрелки */}
+         
           <button
             onClick={() => instanceRef.current?.prev()}
-            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 bg-primary text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center z-10 shadow-md"
+             className="absolute -left-8 sm:-left-12 top-[45%] sm:top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10 shadow-md"
           >
             <ChevronLeft size={20} />
           </button>
           <button
             onClick={() => instanceRef.current?.next()}
-            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 bg-primary text-white w-9 h-9 sm:w-10 sm:h-10 rounded-full flex items-center justify-center z-10 shadow-md"
+             className="absolute -right-8 sm:-right-12 top-[45%] sm:top-1/2 -translate-y-1/2 bg-primary text-white w-10 h-10 rounded-full flex items-center justify-center z-10 shadow-md"
           >
             <ChevronRight size={20} />
           </button>
