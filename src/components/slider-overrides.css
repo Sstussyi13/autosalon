@@ -1,0 +1,14 @@
+/* Новый стиль анимации для слайдера */
+.review-slider .keen-slider__slide {
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: scale(0.85);
+  filter: blur(2px);
+  opacity: 0.5;
+}
+
+.review-slider .keen-slider__slide.active {
+  transform: scale(1.05);
+  filter: blur(0);
+  opacity: 1;
+  z-index: 10;
+}
